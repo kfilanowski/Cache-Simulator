@@ -1,4 +1,5 @@
 .vscode/*
+.vscode/launch.json
 .vscode/
 .idea/
 .idea/*
