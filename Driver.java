@@ -1,3 +1,5 @@
+package CacheSimulator;
+
 import java.io.FileNotFoundException;
 
 /**
@@ -15,11 +17,13 @@ public class Driver {
      * @param args -
      */
     public static void main(String[] args) {
+
         Simulator sim = new Simulator();
         try {
+
             sim.go(args);
         } catch (FileNotFoundException ex) {
-
+            System.out.println("FUCK");
         }
     }
 }
