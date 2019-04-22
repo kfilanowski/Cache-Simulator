@@ -23,7 +23,7 @@ public class Driver {
 
             sim.go(args);
         } catch (FileNotFoundException ex) {
-            System.out.println("FUCK");
+            System.out.println("File not found");
         }
     }
 }
