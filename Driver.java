@@ -1,4 +1,4 @@
-package CacheSimulator;
+//package CacheSimulator;
 
 import java.io.FileNotFoundException;
 
@@ -23,6 +23,8 @@ public class Driver {
             sim.go(test);
         } catch (FileNotFoundException ex) {
             System.out.println("File not found");
+        } catch (NumberFormatException ex) {
+            System.out.println("Error in file.");
         }
     }
 }
