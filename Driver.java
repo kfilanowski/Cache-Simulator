@@ -17,11 +17,10 @@ public class Driver {
      * @param args -
      */
     public static void main(String[] args) {
-
+        String[] test = {"trace.dt"};
         Simulator sim = new Simulator();
         try {
-
-            sim.go(args);
+            sim.go(test);
         } catch (FileNotFoundException ex) {
             System.out.println("File not found");
         }
