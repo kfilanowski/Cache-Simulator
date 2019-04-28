@@ -1,26 +1,24 @@
-//package CacheSimulator;
-
 import java.io.FileNotFoundException;
 
 /**
- * // TODO
+ * The driver for a cache simulator.
  *
  * @author Kevin Filanowski
  * @author Caleb Tupone
- * @version April 22, 2019
+ * @version April 28, 2019
  */
 public class Driver {
 
     /**
-     * // TODO
+     * Created a simulator object and runs it. Input is accepted through
+     * re-directing standard input from a file.
      *
-     * @param args -
+     * @param args - Not Supported.
      */
     public static void main(String[] args) {
-        String[] test = {"trace.dt"};
-        Simulator sim = new Simulator();
         try {
-            sim.go(test);
+            Simulator sim = new Simulator();
+            sim.go();
         } catch (FileNotFoundException ex) {
             System.out.println("File not found");
         } catch (NumberFormatException ex) {
