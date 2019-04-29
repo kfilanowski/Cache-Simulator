@@ -1,11 +1,15 @@
+package CacheSimulator;
+
 import java.io.FileNotFoundException;
+import java.util.NoSuchElementException;
 
 /**
- * The driver for a cache simulator.
+ * The driver for a cache simulator. This is the class to be run.
  *
  * @author Kevin Filanowski
  * @author Caleb Tupone
- * @version April 28, 2019
+ * @version April 29, 2019
+ * CS 350 Project 4
  */
 public class Driver {
 
@@ -19,10 +23,12 @@ public class Driver {
         try {
             Simulator sim = new Simulator();
             sim.go();
-        } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
         } catch (NumberFormatException ex) {
-            System.out.println("Error in file.");
+            System.out.println("Error in File.");
+        } catch (NoSuchElementException ex) {
+            System.out.println(ex.getMessage());
+        } catch (IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());
         }
     }
 }
